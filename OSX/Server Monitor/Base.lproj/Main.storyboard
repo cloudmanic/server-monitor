@@ -674,19 +674,19 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView ambiguous="YES" misplaced="YES" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4OB-wq-1Ok">
-                                <rect key="frame" x="0.0" y="0.0" width="162" height="270"/>
+                                <rect key="frame" x="0.0" y="0.0" width="196" height="270"/>
                                 <clipView key="contentView" ambiguous="YES" drawsBackground="NO" id="5rh-TX-87p">
-                                    <rect key="frame" x="1" y="1" width="160" height="268"/>
+                                    <rect key="frame" x="1" y="1" width="194" height="268"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <outlineView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" viewBased="YES" indentationPerLevel="16" outlineTableColumn="tom-tN-jrj" id="HxT-xE-iWv">
-                                            <rect key="frame" x="0.0" y="0.0" width="160" height="268"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="194" height="268"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" name="_sourceListBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                             <tableColumns>
-                                                <tableColumn width="157" minWidth="16" maxWidth="1000" id="tom-tN-jrj">
+                                                <tableColumn width="191" minWidth="16" maxWidth="1000" id="tom-tN-jrj">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -700,7 +700,7 @@
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
                                                         <tableCellView identifier="HeaderCell" id="IP4-YF-901">
-                                                            <rect key="frame" x="1" y="1" width="157" height="17"/>
+                                                            <rect key="frame" x="1" y="1" width="191" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vw8-9z-qw3">
@@ -720,7 +720,7 @@
                                                             </connections>
                                                         </tableCellView>
                                                         <tableCellView identifier="DataCell" id="RoS-Uk-zo0">
-                                                            <rect key="frame" x="1" y="20" width="157" height="17"/>
+                                                            <rect key="frame" x="1" y="20" width="191" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vpd-9C-zDe">
@@ -759,7 +759,7 @@
                                     <nil key="backgroundColor"/>
                                 </clipView>
                                 <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="f5W-2Z-8Rq">
-                                    <rect key="frame" x="1" y="-15" width="0.0" height="16"/>
+                                    <rect key="frame" x="1" y="253" width="0.0" height="16"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="ati-wB-91A">
@@ -779,12 +779,12 @@
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-                <treeController objectClassName="Playlist" childrenKeyPath="children" leafKeyPath="isLeaf" avoidsEmptySelection="NO" id="B04-2H-Ffh">
+                <treeController objectClassName="Server" childrenKeyPath="children" leafKeyPath="isLeaf" avoidsEmptySelection="NO" id="B04-2H-Ffh">
                     <connections>
                         <outlet property="content" destination="Rcq-jJ-ESy" id="C5U-ob-isz"/>
                     </connections>
                 </treeController>
-                <customObject id="Rcq-jJ-ESy" userLabel="playlists" customClass="NSMutableArray"/>
+                <customObject id="Rcq-jJ-ESy" userLabel="Servers" customClass="NSMutableArray"/>
             </objects>
             <point key="canvasLocation" x="133" y="674"/>
         </scene>

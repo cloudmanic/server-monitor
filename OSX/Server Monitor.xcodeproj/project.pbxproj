@@ -11,7 +11,7 @@
 		B0C94F6C1D30654600F21D8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C94F6B1D30654600F21D8B /* ViewController.swift */; };
 		B0C94F6E1D30654600F21D8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0C94F6D1D30654600F21D8B /* Assets.xcassets */; };
 		B0C94F711D30654600F21D8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0C94F6F1D30654600F21D8B /* Main.storyboard */; };
-		B0C94F791D30661C00F21D8B /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C94F781D30661C00F21D8B /* Playlist.swift */; };
+		B0C94F791D30661C00F21D8B /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C94F781D30661C00F21D8B /* Server.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +21,7 @@
 		B0C94F6D1D30654600F21D8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0C94F701D30654600F21D8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B0C94F721D30654600F21D8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B0C94F781D30661C00F21D8B /* Playlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		B0C94F781D30661C00F21D8B /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +59,7 @@
 				B0C94F6D1D30654600F21D8B /* Assets.xcassets */,
 				B0C94F6F1D30654600F21D8B /* Main.storyboard */,
 				B0C94F721D30654600F21D8B /* Info.plist */,
-				B0C94F781D30661C00F21D8B /* Playlist.swift */,
+				B0C94F781D30661C00F21D8B /* Server.swift */,
 			);
 			path = "Server Monitor";
 			sourceTree = "<group>";
@@ -136,7 +136,7 @@
 			files = (
 				B0C94F6C1D30654600F21D8B /* ViewController.swift in Sources */,
 				B0C94F6A1D30654600F21D8B /* AppDelegate.swift in Sources */,
-				B0C94F791D30661C00F21D8B /* Playlist.swift in Sources */,
+				B0C94F791D30661C00F21D8B /* Server.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +279,7 @@
 				B0C94F771D30654600F21D8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

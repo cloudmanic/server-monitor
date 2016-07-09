@@ -8,10 +8,9 @@
 
 import Cocoa
 
-class Playlist: NSObject {
+class Server: NSObject {
 
-    dynamic var name: String = "New Playlist"
-    dynamic var creator: String = "User"
+    dynamic var name: String = "web1.example.com"
     
     func isLeaf() -> Bool {
         return true

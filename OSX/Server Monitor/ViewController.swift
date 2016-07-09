@@ -37,29 +37,25 @@ class ViewController: NSViewController, NSOutlineViewDataSource, NSOutlineViewDe
         ]
         
         let dict: NSMutableDictionary = NSMutableDictionary (dictionary: root)
-        dict.setObject([Playlist(), Playlist(), Playlist(), Playlist()], forKey: "children")
+        dict.setObject([ Server(), Server(), Server(), Server() ], forKey: "children")
         treeController.addObject(dict)
         treeController.addObject(dict)
         treeController.addObject(dict)
-        
-        print(dict)
     }
     
     // Mark: - Helpers
     func isHeader(item: AnyObject) -> Bool {
         
         if let item = item as? NSTreeNode {
-            return !(item.representedObject is Playlist)
+            return !(item.representedObject is Server)
         } else {
-            return !(item is Playlist)
+            return !(item is Server)
         }
         
     }
     
     // Mark: Delegate
     func outlineView(outlineView: NSOutlineView, viewForTableColumn tableColumn: NSTableColumn?, item: AnyObject) -> NSView? {
-        
-        print("here")
         
         if isHeader(item) {
             return outlineView.makeViewWithIdentifier("HeaderCell", owner: self)
