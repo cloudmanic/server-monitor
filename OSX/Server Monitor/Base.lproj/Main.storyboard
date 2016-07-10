@@ -674,6 +674,9 @@
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
+                                        <connections>
+                                            <segue destination="MeV-Pf-P5l" kind="sheet" id="Gey-co-CEF"/>
+                                        </connections>
                                     </button>
                                 </toolbarItem>
                                 <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="vNg-8T-c23"/>
@@ -691,6 +694,29 @@
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="133" y="214"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mD1-zG-8se">
+            <objects>
+                <viewController id="MeV-Pf-P5l" sceneMemberID="viewController">
+                    <view key="view" id="Igd-sL-zhg">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SJt-cq-7GX">
+                                <rect key="frame" x="150" y="106" width="240" height="104"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Add Server HEre" id="l65-NU-ijo">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                    </view>
+                </viewController>
+                <customObject id="5eF-Jd-ilp" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="263" y="721"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
