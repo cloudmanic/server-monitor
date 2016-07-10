@@ -695,10 +695,10 @@
             </objects>
             <point key="canvasLocation" x="133" y="214"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Edit Server Controller-->
         <scene sceneID="mD1-zG-8se">
             <objects>
-                <viewController id="MeV-Pf-P5l" sceneMemberID="viewController">
+                <viewController id="MeV-Pf-P5l" customClass="AddEditServerController" customModule="Server_Monitor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="Igd-sL-zhg">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -711,8 +711,24 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hV1-2f-gfM">
+                                <rect key="frame" x="185" y="85" width="82" height="32"/>
+                                <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Da4-x3-hhx">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="cancelView:" target="MeV-Pf-P5l" id="Sgl-mq-h1S"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="hV1-2f-gfM" id="MpK-ez-uSY"/>
+                    </connections>
                 </viewController>
                 <customObject id="5eF-Jd-ilp" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
