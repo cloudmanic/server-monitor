@@ -661,17 +661,26 @@
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                         <value key="minSize" type="size" width="480" height="270"/>
                         <value key="maxSize" type="size" width="480" height="5000"/>
-                        <toolbar key="toolbar" implicitIdentifier="BB93A67F-EA7E-409F-BE29-1B6B1DFFC84F" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="J8V-d4-kh9">
+                        <toolbar key="toolbar" implicitIdentifier="A5396867-7DD3-421F-9168-FD0FDA4B1338" allowsUserCustomization="NO" showsBaselineSeparator="NO" displayMode="iconOnly" sizeMode="regular" id="Cfd-v1-H4u">
                             <allowedToolbarItems>
-                                <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="3ik-N2-nFj"/>
-                                <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="wbe-7b-Sxj"/>
-                                <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="Bgm-2i-isn"/>
-                                <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="H5y-vR-8aB"/>
+                                <toolbarItem implicitItemIdentifier="BE6999FB-7EBB-45CC-96CA-0A7348C15252" label="Custom View" paletteLabel="Custom View" id="nsM-hr-AXq">
+                                    <nil key="toolTip"/>
+                                    <size key="minSize" width="82" height="32"/>
+                                    <size key="maxSize" width="103" height="32"/>
+                                    <button key="view" verticalHuggingPriority="750" id="WZL-8i-nHp">
+                                        <rect key="frame" x="0.0" y="14" width="103" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="push" title="Add Server" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="9MJ-xG-raR">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="vNg-8T-c23"/>
                             </allowedToolbarItems>
                             <defaultToolbarItems>
-                                <toolbarItem reference="3ik-N2-nFj"/>
-                                <toolbarItem reference="H5y-vR-8aB"/>
-                                <toolbarItem reference="wbe-7b-Sxj"/>
+                                <toolbarItem reference="vNg-8T-c23"/>
+                                <toolbarItem reference="nsM-hr-AXq"/>
                             </defaultToolbarItems>
                         </toolbar>
                     </window>
@@ -698,7 +707,7 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnReordering="NO" columnSelection="YES" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" rowHeight="100" viewBased="YES" id="7vX-V3-H4U">
-                                            <rect key="frame" x="0.0" y="0.0" width="473" height="611"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="473" height="0.0"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="25"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
