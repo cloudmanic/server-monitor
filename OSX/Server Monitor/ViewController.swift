@@ -8,18 +8,25 @@
 
 import Cocoa
 
-class ViewController: NSViewController, NSOutlineViewDataSource, NSOutlineViewDelegate {
-    
-    @IBOutlet var treeController: NSTreeController!
-    @IBOutlet weak var outlineView: NSOutlineView!
+class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSource {
+
+    @IBOutlet weak var serverTable: NSTableView!
+
+    var servers: NSMutableArray! = NSMutableArray()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        addData()
+
+        self.servers.addObject("web1.example.com");
+        self.servers.addObject("web2.example.com");
+        self.servers.addObject("web3.example.com");
+        self.servers.addObject("web4.example.com");
+        self.servers.addObject("web5.example.com");
         
-        // Start with all the headers expanded
-        outlineView.expandItem(nil, expandChildren: true)
+        // Reload the table view data.
+        self.serverTable.reloadData()
+        
     }
     
     override var representedObject: AnyObject? {
@@ -27,44 +34,24 @@ class ViewController: NSViewController, NSOutlineViewDataSource, NSOutlineViewDe
             // Update the view, if already loaded.
         }
     }
-    
-    // OutlineView Data to get started.
-    func addData() {
-        
-        let root = [
-            "name": "Servers",
-            "isLeaf": false
-        ]
-        
-        let dict: NSMutableDictionary = NSMutableDictionary (dictionary: root)
-        dict.setObject([ Server(), Server(), Server(), Server() ], forKey: "children")
-        treeController.addObject(dict)
-        treeController.addObject(dict)
-        treeController.addObject(dict)
+
+
+    //  Returns that number of objects in our table view.
+    func numberOfRowsInTableView(tableView: NSTableView) -> Int {
+        return self.servers.count
     }
     
-    // Mark: - Helpers
-    func isHeader(item: AnyObject) -> Bool {
+    // Call this to display a table row
+    func tableView(tableView: NSTableView, viewForTableColumn tableColumn: NSTableColumn?, row: Int) -> NSView? {
         
-        if let item = item as? NSTreeNode {
-            return !(item.representedObject is Server)
-        } else {
-            return !(item is Server)
-        }
+        var cellView = tableView.makeViewWithIdentifier("cell", owner: self) as! NSTableCellView
         
-    }
-    
-    // Mark: Delegate
-    func outlineView(outlineView: NSOutlineView, viewForTableColumn tableColumn: NSTableColumn?, item: AnyObject) -> NSView? {
+        cellView.textField!.stringValue = self.servers.objectAtIndex(row) as! String
         
-        if isHeader(item) {
-            return outlineView.makeViewWithIdentifier("HeaderCell", owner: self)
-        } else {
-            return outlineView.makeViewWithIdentifier("DataCell", owner: self)
-        }
+        return cellView
         
     }
 
-
+    
 }
 
