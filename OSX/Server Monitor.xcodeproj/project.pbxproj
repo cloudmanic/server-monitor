@@ -16,11 +16,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B091A5491D3361D6007401A3 /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
-		B0B7BA6C1D32DC8D00AE2B37 /* AddEditServerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEditServerController.swift; sourceTree = "<group>"; };
+		B091A5491D3361D6007401A3 /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WindowController.swift; path = "Server Monitor/WindowController.swift"; sourceTree = "<group>"; };
+		B0B7BA6C1D32DC8D00AE2B37 /* AddEditServerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddEditServerController.swift; path = "Server Monitor/AddEditServerController.swift"; sourceTree = "<group>"; };
 		B0C94F661D30654600F21D8B /* Server Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Server Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0C94F691D30654600F21D8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B0C94F6B1D30654600F21D8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B0C94F6B1D30654600F21D8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "Server Monitor/ViewController.swift"; sourceTree = "<group>"; };
 		B0C94F6D1D30654600F21D8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0C94F701D30654600F21D8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B0C94F721D30654600F21D8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,6 +37,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B091A54B1D3384D6007401A3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B091A5491D3361D6007401A3 /* WindowController.swift */,
+				B0B7BA6C1D32DC8D00AE2B37 /* AddEditServerController.swift */,
+				B0C94F6B1D30654600F21D8B /* ViewController.swift */,
+			);
+			name = Controllers;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		B091A54C1D338514007401A3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B0C94F6F1D30654600F21D8B /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
 		B0C94F5D1D30654600F21D8B = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +75,11 @@
 		B0C94F681D30654600F21D8B /* Server Monitor */ = {
 			isa = PBXGroup;
 			children = (
+				B091A54B1D3384D6007401A3 /* Controllers */,
 				B0C94F691D30654600F21D8B /* AppDelegate.swift */,
-				B0C94F6B1D30654600F21D8B /* ViewController.swift */,
 				B0C94F6D1D30654600F21D8B /* Assets.xcassets */,
-				B0C94F6F1D30654600F21D8B /* Main.storyboard */,
+				B091A54C1D338514007401A3 /* Storyboards */,
 				B0C94F721D30654600F21D8B /* Info.plist */,
-				B0B7BA6C1D32DC8D00AE2B37 /* AddEditServerController.swift */,
-				B091A5491D3361D6007401A3 /* WindowController.swift */,
 			);
 			path = "Server Monitor";
 			sourceTree = "<group>";
