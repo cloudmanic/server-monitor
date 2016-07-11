@@ -33,15 +33,6 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
             // Update the view, if already loaded.
         }
     }
-    
-    // Call this just before we open a new view controller.
-    override func prepareForSegue(segue: NSStoryboardSegue, sender: AnyObject?) {
-    
-        let newCont:AddEditServerController = segue.destinationController as! AddEditServerController
-        
-        newCont.Test = self.servers[1] as! String
-        
-    }
 
     //  Returns that number of objects in our table view.
     func numberOfRowsInTableView(tableView: NSTableView) -> Int {

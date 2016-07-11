@@ -12,12 +12,11 @@ class AddEditServerController: NSViewController {
     
     @IBOutlet weak var cancelButton: NSButton!
     
-    var Test : String = "Rocks"
+    var Test : String! = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("asdf");
         print(Test);
         
     }

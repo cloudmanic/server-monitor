@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B091A54A1D3361D6007401A3 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B091A5491D3361D6007401A3 /* WindowController.swift */; };
 		B0B7BA6D1D32DC8D00AE2B37 /* AddEditServerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B7BA6C1D32DC8D00AE2B37 /* AddEditServerController.swift */; };
 		B0C94F6A1D30654600F21D8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C94F691D30654600F21D8B /* AppDelegate.swift */; };
 		B0C94F6C1D30654600F21D8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C94F6B1D30654600F21D8B /* ViewController.swift */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B091A5491D3361D6007401A3 /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 		B0B7BA6C1D32DC8D00AE2B37 /* AddEditServerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEditServerController.swift; sourceTree = "<group>"; };
 		B0C94F661D30654600F21D8B /* Server Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Server Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0C94F691D30654600F21D8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				B0C94F6F1D30654600F21D8B /* Main.storyboard */,
 				B0C94F721D30654600F21D8B /* Info.plist */,
 				B0B7BA6C1D32DC8D00AE2B37 /* AddEditServerController.swift */,
+				B091A5491D3361D6007401A3 /* WindowController.swift */,
 			);
 			path = "Server Monitor";
 			sourceTree = "<group>";
@@ -135,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0C94F6C1D30654600F21D8B /* ViewController.swift in Sources */,
+				B091A54A1D3361D6007401A3 /* WindowController.swift in Sources */,
 				B0C94F6A1D30654600F21D8B /* AppDelegate.swift in Sources */,
 				B0B7BA6D1D32DC8D00AE2B37 /* AddEditServerController.swift in Sources */,
 			);
