@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSource {
+class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSource, AddEditServerDelegate {
 
     @IBOutlet weak var serverTable: NSTableView!
 
@@ -50,6 +50,16 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
         
     }
 
+    // Called from the destination controller via delegation
+    func setColor(colorName: String) {
+        
+        // Update The 3 row with this.
+        self.servers[2] = "Spicer Was HERE - " + colorName
+        
+        // Reload the table view data.
+        self.serverTable.reloadData()
+    }
+    
     
 }
 

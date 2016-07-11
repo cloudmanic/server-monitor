@@ -19,6 +19,8 @@ class WindowController: NSWindowController {
         
         let newCont = segue.destinationController as! AddEditServerController
         
+        newCont.delegate = self.contentViewController as! ViewController
+        
         newCont.Test = "Spicer Rocks"
         
     }
