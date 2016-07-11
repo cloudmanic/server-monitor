@@ -14,7 +14,9 @@ class WindowController: NSWindowController {
         super.windowDidLoad()
     }
 
+    //
     // Call this just before we open a new view controller.
+    //
     override func prepareForSegue(segue: NSStoryboardSegue, sender: AnyObject?) {
         
         let newCont = segue.destinationController as! AddEditServerController

@@ -8,7 +8,14 @@
 
 import Cocoa
 
-class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSource, AddEditServerDelegate {
+//
+// Delegate for adding / editing / removing servers to the list.
+//
+protocol ServersDelegate {
+    func addServer(name: String);
+}
+
+class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSource, ServersDelegate {
 
     @IBOutlet weak var serverTable: NSTableView!
 
@@ -34,12 +41,16 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
         }
     }
 
+    //
     //  Returns that number of objects in our table view.
+    //
     func numberOfRowsInTableView(tableView: NSTableView) -> Int {
         return self.servers.count
     }
     
+    //
     // Call this to display a table row
+    //
     func tableView(tableView: NSTableView, viewForTableColumn tableColumn: NSTableColumn?, row: Int) -> NSView? {
         
         let cellView = tableView.makeViewWithIdentifier("cell", owner: self) as! NSTableCellView
@@ -50,11 +61,13 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
         
     }
 
-    // Called from the destination controller via delegation
-    func setColor(colorName: String) {
+    //
+    // Add a new server to the server list.
+    //
+    func addServer(name: String) {
         
         // Update The 3 row with this.
-        self.servers[2] = "Spicer Was HERE - " + colorName
+        self.servers[2] = "Spicer Was HERE - " + name
         
         // Reload the table view data.
         self.serverTable.reloadData()

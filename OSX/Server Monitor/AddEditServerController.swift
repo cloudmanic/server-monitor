@@ -8,15 +8,11 @@
 
 import Cocoa
 
-protocol AddEditServerDelegate {
-    func setColor(colorName: String);
-}
-
 class AddEditServerController: NSViewController {
     
     @IBOutlet weak var cancelButton: NSButton!
     
-    var delegate : AddEditServerDelegate! = nil
+    var delegate : ServersDelegate! = nil
     
     var Test : String! = nil
     
@@ -27,10 +23,12 @@ class AddEditServerController: NSViewController {
         
     }
 
+    //
     // Cancels the sheet and goes back to the server screen.
+    //
     @IBAction func cancelView(sender: AnyObject) {
         
-        delegate.setColor("This Changed")
+        delegate.addServer("This Changed")
         
         self.dismissController(self);
     }
