@@ -37,9 +37,9 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
     // Call this just before we open a new view controller.
     override func prepareForSegue(segue: NSStoryboardSegue, sender: AnyObject?) {
     
-        let newController = segue.destinationController as! AddEditServerController
+        let newCont:AddEditServerController = segue.destinationController as! AddEditServerController
         
-        newController.Test = "Spicer Rocks"
+        newCont.Test = self.servers[1] as! String
         
     }
 
