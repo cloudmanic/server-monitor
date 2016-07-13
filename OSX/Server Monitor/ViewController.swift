@@ -12,7 +12,7 @@ import Cocoa
 // Delegate for adding / editing / removing servers to the list.
 //
 protocol ServersDelegate {
-    func addServer(name: String);
+    func addServer(server: Server);
 }
 
 class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSource, ServersDelegate {
@@ -24,14 +24,17 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.servers.addObject("web1.example.com")
-        self.servers.addObject("web2.example.com")
-        self.servers.addObject("web3.example.com")
-        self.servers.addObject("web4.example.com")
-        self.servers.addObject("web5.example.com")
+        // Add a server.
+//        let server : Server = Server()
+//        server.name = "web1.example.com"
+//        server.sshHost = "web1.example.com"
+//        server.sshPort = "22"
+//        server.sshUser = "bob"
+//        server.sshPassword = "password"
+//        self.servers.addObject(server)
         
         // Reload the table view data.
-        self.serverTable.reloadData()
+        //self.serverTable.reloadData()
         
     }
     
@@ -54,8 +57,9 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
     func tableView(tableView: NSTableView, viewForTableColumn tableColumn: NSTableColumn?, row: Int) -> NSView? {
         
         let cellView = tableView.makeViewWithIdentifier("cell", owner: self) as! NSTableCellView
+        let server = self.servers.objectAtIndex(row) as! Server
         
-        cellView.textField!.stringValue = self.servers.objectAtIndex(row) as! String
+        cellView.textField!.stringValue = server.name
         
         return cellView
         
@@ -64,13 +68,14 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
     //
     // Add a new server to the server list.
     //
-    func addServer(name: String) {
+    func addServer(server: Server) {
         
-        // Update The 3 row with this.
-        self.servers[2] = "Spicer Was HERE - " + name
-        
+        // Add the server to the list.
+        self.servers.addObject(server)
+    
         // Reload the table view data.
         self.serverTable.reloadData()
+        
     }
     
     

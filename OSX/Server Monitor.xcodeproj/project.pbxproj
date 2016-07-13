@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B06CB5121D35B56E008E00F1 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06CB5111D35B56E008E00F1 /* Server.swift */; };
 		B091A54A1D3361D6007401A3 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B091A5491D3361D6007401A3 /* WindowController.swift */; };
 		B0B7BA6D1D32DC8D00AE2B37 /* AddEditServerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B7BA6C1D32DC8D00AE2B37 /* AddEditServerController.swift */; };
 		B0C94F6A1D30654600F21D8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C94F691D30654600F21D8B /* AppDelegate.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B06CB5111D35B56E008E00F1 /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
 		B091A5491D3361D6007401A3 /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WindowController.swift; path = "Server Monitor/WindowController.swift"; sourceTree = "<group>"; };
 		B0B7BA6C1D32DC8D00AE2B37 /* AddEditServerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddEditServerController.swift; path = "Server Monitor/AddEditServerController.swift"; sourceTree = "<group>"; };
 		B0C94F661D30654600F21D8B /* Server Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Server Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B06CB5101D35B550008E00F1 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				B06CB5111D35B56E008E00F1 /* Server.swift */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
 		B091A54B1D3384D6007401A3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +85,7 @@
 		B0C94F681D30654600F21D8B /* Server Monitor */ = {
 			isa = PBXGroup;
 			children = (
+				B06CB5101D35B550008E00F1 /* Objects */,
 				B091A54B1D3384D6007401A3 /* Controllers */,
 				B0C94F691D30654600F21D8B /* AppDelegate.swift */,
 				B0C94F6D1D30654600F21D8B /* Assets.xcassets */,
@@ -154,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B06CB5121D35B56E008E00F1 /* Server.swift in Sources */,
 				B0C94F6C1D30654600F21D8B /* ViewController.swift in Sources */,
 				B091A54A1D3361D6007401A3 /* WindowController.swift in Sources */,
 				B0C94F6A1D30654600F21D8B /* AppDelegate.swift in Sources */,

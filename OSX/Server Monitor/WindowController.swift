@@ -21,9 +21,8 @@ class WindowController: NSWindowController {
         
         let newCont = segue.destinationController as! AddEditServerController
         
+        // Create the delecate that the window communicates back to
         newCont.delegate = self.contentViewController as! ViewController
-        
-        newCont.Test = "Spicer Rocks"
         
     }
     
