@@ -1,0 +1,6 @@
+framework module Pods_Server_Monitor {
+  umbrella header "Pods-Server Monitor-umbrella.h"
+
+  export *
+  module * { export * }
+}

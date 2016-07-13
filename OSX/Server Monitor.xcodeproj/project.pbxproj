@@ -9,16 +9,40 @@
 /* Begin PBXBuildFile section */
 		B06CB5121D35B56E008E00F1 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06CB5111D35B56E008E00F1 /* Server.swift */; };
 		B091A54A1D3361D6007401A3 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B091A5491D3361D6007401A3 /* WindowController.swift */; };
+		B096ED201D36095F000A965D /* NMSSH.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B096ED1F1D36095F000A965D /* NMSSH.framework */; };
+		B096ED231D360B41000A965D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B096ED221D360B41000A965D /* libz.tbd */; };
+		B096ED271D361684000A965D /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B096ED261D361684000A965D /* Dispatch.swift */; };
+		B09E80E71D35D2730069463B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B09E80E61D35D2730069463B /* CFNetwork.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		B0B7BA6D1D32DC8D00AE2B37 /* AddEditServerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B7BA6C1D32DC8D00AE2B37 /* AddEditServerController.swift */; };
 		B0C94F6A1D30654600F21D8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C94F691D30654600F21D8B /* AppDelegate.swift */; };
 		B0C94F6C1D30654600F21D8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C94F6B1D30654600F21D8B /* ViewController.swift */; };
 		B0C94F6E1D30654600F21D8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0C94F6D1D30654600F21D8B /* Assets.xcassets */; };
 		B0C94F711D30654600F21D8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0C94F6F1D30654600F21D8B /* Main.storyboard */; };
+		D7E235DBDAF3F9B8410BD490 /* Pods_Server_Monitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 917AAFEF8F9840BDE3241CF6 /* Pods_Server_Monitor.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B09E80F01D35EFBB0069463B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		11BF1B9EA8EE661B79195FD8 /* Pods-Server Monitor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Server Monitor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Server Monitor/Pods-Server Monitor.debug.xcconfig"; sourceTree = "<group>"; };
+		917AAFEF8F9840BDE3241CF6 /* Pods_Server_Monitor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Server_Monitor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B06CB5111D35B56E008E00F1 /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
 		B091A5491D3361D6007401A3 /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WindowController.swift; path = "Server Monitor/WindowController.swift"; sourceTree = "<group>"; };
+		B096ED1F1D36095F000A965D /* NMSSH.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NMSSH.framework; sourceTree = "<group>"; };
+		B096ED221D360B41000A965D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B096ED261D361684000A965D /* Dispatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dispatch.swift; sourceTree = "<group>"; };
+		B09E80E61D35D2730069463B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B09E80E91D35D3E80069463B /* NMSSH-Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NMSSH-Bridge-Header.h"; sourceTree = "<group>"; };
 		B0B7BA6C1D32DC8D00AE2B37 /* AddEditServerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddEditServerController.swift; path = "Server Monitor/AddEditServerController.swift"; sourceTree = "<group>"; };
 		B0C94F661D30654600F21D8B /* Server Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Server Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0C94F691D30654600F21D8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +50,7 @@
 		B0C94F6D1D30654600F21D8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0C94F701D30654600F21D8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B0C94F721D30654600F21D8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B643A88E4FA3932AFD2591EB /* Pods-Server Monitor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Server Monitor.release.xcconfig"; path = "Pods/Target Support Files/Pods-Server Monitor/Pods-Server Monitor.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,12 +58,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B096ED231D360B41000A965D /* libz.tbd in Frameworks */,
+				B096ED201D36095F000A965D /* NMSSH.framework in Frameworks */,
+				B09E80E71D35D2730069463B /* CFNetwork.framework in Frameworks */,
+				D7E235DBDAF3F9B8410BD490 /* Pods_Server_Monitor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5187CA1C7243E4397E7C2DF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B09E80E61D35D2730069463B /* CFNetwork.framework */,
+				B096ED1F1D36095F000A965D /* NMSSH.framework */,
+				917AAFEF8F9840BDE3241CF6 /* Pods_Server_Monitor.framework */,
+				B096ED221D360B41000A965D /* libz.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B06CB5101D35B550008E00F1 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
@@ -66,11 +106,29 @@
 			name = Storyboards;
 			sourceTree = "<group>";
 		};
+		B096ED241D360BAF000A965D /* Bridges */ = {
+			isa = PBXGroup;
+			children = (
+				B09E80E91D35D3E80069463B /* NMSSH-Bridge-Header.h */,
+			);
+			name = Bridges;
+			sourceTree = "<group>";
+		};
+		B096ED251D361672000A965D /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				B096ED261D361684000A965D /* Dispatch.swift */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
 		B0C94F5D1D30654600F21D8B = {
 			isa = PBXGroup;
 			children = (
 				B0C94F681D30654600F21D8B /* Server Monitor */,
 				B0C94F671D30654600F21D8B /* Products */,
+				C106FF3365376EA2DED0F063 /* Pods */,
+				5187CA1C7243E4397E7C2DF3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +143,8 @@
 		B0C94F681D30654600F21D8B /* Server Monitor */ = {
 			isa = PBXGroup;
 			children = (
+				B096ED251D361672000A965D /* Library */,
+				B096ED241D360BAF000A965D /* Bridges */,
 				B06CB5101D35B550008E00F1 /* Objects */,
 				B091A54B1D3384D6007401A3 /* Controllers */,
 				B0C94F691D30654600F21D8B /* AppDelegate.swift */,
@@ -95,6 +155,15 @@
 			path = "Server Monitor";
 			sourceTree = "<group>";
 		};
+		C106FF3365376EA2DED0F063 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				11BF1B9EA8EE661B79195FD8 /* Pods-Server Monitor.debug.xcconfig */,
+				B643A88E4FA3932AFD2591EB /* Pods-Server Monitor.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -102,9 +171,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0C94F751D30654600F21D8B /* Build configuration list for PBXNativeTarget "Server Monitor" */;
 			buildPhases = (
+				C4A583F304E61D4056DDEB8E /* [CP] Check Pods Manifest.lock */,
 				B0C94F621D30654600F21D8B /* Sources */,
 				B0C94F631D30654600F21D8B /* Frameworks */,
 				B0C94F641D30654600F21D8B /* Resources */,
+				B09E80F01D35EFBB0069463B /* CopyFiles */,
+				7747CB1458EDDC787B626D88 /* [CP] Embed Pods Frameworks */,
+				7572CE692FA1913698E815F7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -160,6 +233,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7572CE692FA1913698E815F7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Server Monitor/Pods-Server Monitor-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7747CB1458EDDC787B626D88 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Server Monitor/Pods-Server Monitor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4A583F304E61D4056DDEB8E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B0C94F621D30654600F21D8B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -168,6 +289,7 @@
 				B06CB5121D35B56E008E00F1 /* Server.swift in Sources */,
 				B0C94F6C1D30654600F21D8B /* ViewController.swift in Sources */,
 				B091A54A1D3361D6007401A3 /* WindowController.swift in Sources */,
+				B096ED271D361684000A965D /* Dispatch.swift in Sources */,
 				B0C94F6A1D30654600F21D8B /* AppDelegate.swift in Sources */,
 				B0B7BA6D1D32DC8D00AE2B37 /* AddEditServerController.swift in Sources */,
 			);
@@ -271,25 +393,41 @@
 		};
 		B0C94F761D30654600F21D8B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11BF1B9EA8EE661B79195FD8 /* Pods-Server Monitor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Server",
+					Monitor,
+				);
 				INFOPLIST_FILE = "Server Monitor/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cloudmanic.Server-Monitor";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Server Monitor/NMSSH-Bridge-Header.h";
 			};
 			name = Debug;
 		};
 		B0C94F771D30654600F21D8B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B643A88E4FA3932AFD2591EB /* Pods-Server Monitor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Server",
+					Monitor,
+				);
 				INFOPLIST_FILE = "Server Monitor/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cloudmanic.Server-Monitor";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Server Monitor/NMSSH-Bridge-Header.h";
 			};
 			name = Release;
 		};

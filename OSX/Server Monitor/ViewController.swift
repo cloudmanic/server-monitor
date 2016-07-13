@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import Foundation
 
 //
 // Delegate for adding / editing / removing servers to the list.
@@ -21,20 +22,42 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
 
     var servers: NSMutableArray! = NSMutableArray()
     
+    var timer: dispatch_source_t!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Add a server.
-//        let server : Server = Server()
-//        server.name = "web1.example.com"
-//        server.sshHost = "web1.example.com"
-//        server.sshPort = "22"
-//        server.sshUser = "bob"
-//        server.sshPassword = "password"
-//        self.servers.addObject(server)
         
-        // Reload the table view data.
-        //self.serverTable.reloadData()
+//        // Run in a new thread every 2 seconds.
+//        timer = Dispatch.timerAsync(interval: 2) {
+//            
+//            var response : String = ""
+//            let host = ""
+//            let username = ""
+//            let password = ""
+//            let session = NMSSHSession(host: host, andUsername: username)
+//            
+//            session.connect()
+//            
+//            if(session.connected == true)
+//            {
+//                session.authenticateByPassword(password)
+//                
+//                if(session.authorized == true)
+//                {
+//                    do {
+//                        response = try session.channel.execute("df -h | grep root | awk '{ print $5 }'")
+//                        print(response)
+//                    } catch {
+//                        //error.memory = error1
+//                        print("SSH: Error running command.")
+//                    }
+//                }
+//            
+//                session.disconnect()
+//            }
+//            
+//        }
         
     }
     
